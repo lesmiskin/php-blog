@@ -4,7 +4,7 @@
 
 	//Connect to database and grab articles.
 	$connection = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
-	$selectQuery = "select * from article order by created desc";
+	$selectQuery = "select title, content, created from article order by created desc";
 	
 	//Load results into array for iteration later on in the page.
 	$results = $connection	
