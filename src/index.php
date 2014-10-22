@@ -1,6 +1,6 @@
 <?php
 	//Load in configuration variables from external file.
-	include '/includes/cfg-example.php';
+	include 'includes/cfg-production.php';
 
 	//Connect to database and grab articles.
 	$connection = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
