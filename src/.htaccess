@@ -1,0 +1,10 @@
+# This script automatically redirects visitors to an HTTPS equivalent page.
+# Uncomment the lines below to activate.
+# NB: Requires TLS certificate installed on the server, see https://www.startssl.com for a free cert.
+# Script source: http://kb.sp.parallels.com/en/112135
+
+#<IfModule mod_rewrite.c>
+#    RewriteEngine on
+#    RewriteCond %{HTTPS} !=on
+#    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,QSA]
+#</IfModule>
