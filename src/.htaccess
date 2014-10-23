@@ -1,8 +1,5 @@
-# This script automatically redirects visitors to an HTTPS equivalent page.
-# Uncomment the lines below to activate.
-# NB: Requires TLS certificate installed on the server, see https://www.startssl.com for a free cert.
-# Script source: http://kb.sp.parallels.com/en/112135
-
+# Enable to redirect all HTTP requests to HTTPS.
+# Source: http://kb.sp.parallels.com/en/112135
 #<IfModule mod_rewrite.c>
 #    RewriteEngine on
 #    RewriteCond %{HTTPS} !=on

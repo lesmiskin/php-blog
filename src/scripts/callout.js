@@ -7,7 +7,7 @@ function loadSocialLinkCallouts() {
 			//Write contents of caption from data attribute on icon
 			var dataCaption = $(this).data('callout');
 			callout.text(dataCaption);
-			var offset = $(this).offset().left - (callout.width()) + 12;
+			var offset = $(this).offset().left - (callout.width()) + 8;
 			callout.css('left', offset);
 			callout.show(); 
 		},
@@ -16,3 +16,7 @@ function loadSocialLinkCallouts() {
 		}
 	);
 }
+
+$(function() {
+	loadSocialLinkCallouts();
+});
