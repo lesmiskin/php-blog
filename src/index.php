@@ -22,7 +22,7 @@
 <head>
 	<meta charset="utf-8">
 	<title><?= BLOG_TITLE ?></title>
-	<meta name="Description" content="Musings on programming and computer enthusiasm.">
+	<meta name="Description" content="<?= BLOG_DESCRIPTION ?>">
 
 	<!-- Tell mobile platforms we support their form-factor, with appropriate initial scale. -->
 	<meta name="viewport" content="width=device-width, initial-scale=0.75">

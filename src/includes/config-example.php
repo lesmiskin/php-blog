@@ -2,6 +2,7 @@
 	//Blog constants, modify as necessary.
 	const BLOG_TITLE = 				'Example Blog';
 	const BLOG_THEME = 				'example';
+	const BLOG_DESCRIPTION = 		'All your blogs are belong to us.'
 
 	const DB_DSN = 					'mysql:host=127.0.0.1;dbname=blog';
 	const DB_USERNAME = 			'username';
