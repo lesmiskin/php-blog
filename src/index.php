@@ -37,8 +37,8 @@
 
 	<!-- HTML5 shim for IE9 and below. -->
 	<!--[if lt IE 9]>
-        	<script async src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        	<script async src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<script async src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script async src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
 	<!-- Google Analytics -->
@@ -49,7 +49,7 @@
 				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', <?= GA_ID ?>, 'auto');
+			ga('create', '<?= GA_ID ?>', 'auto');
 			ga('send', 'pageview');
 		</script>
 	<?php } ?>
@@ -87,6 +87,7 @@
 			<?php foreach($results as $row) { ?>
 				<article>
 					<h2><?= $row->Title ?></h2>
+					
 					<?= $row->Content ?>
 				</article>
 			<?php } ?>
