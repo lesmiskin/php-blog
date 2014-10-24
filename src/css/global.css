@@ -100,6 +100,7 @@ a:hover {
 article {
 	padding:25px 42px 42px 42px;
 	border-bottom:2px solid #E3E4B6;
+	min-width:380px;
 }
 
 article header {
@@ -135,18 +136,23 @@ width:100% !important;
 body { 
 	margin:0;
 }
-#pageContent {
-	padding:80px 20px 40px 20px;
-	box-shadow:none;
-}
 #pageContainer {
 	padding:0;
 }
-header {
+#pageHeader {
 	margin-bottom:0;
 }
 #navContainer {
 	padding:0 20px;
+}
+
+/*Push down and simplify article spacing.*/
+#pageContent {
+	padding-top:50px;
+	box-shadow:none;
+}
+article {
+	padding:25px 20px 42px 20px;
 }
 }
 
