@@ -23,7 +23,7 @@ body {
 	min-width:380px;
 }
 /*Header*/
-header {
+#pageHeader {
 	vertical-alignment:middle;
 	display:table;
 	width:100%;
@@ -101,6 +101,17 @@ article {
 	padding:25px 42px 42px 42px;
 	border-bottom:2px solid #E3E4B6;
 }
+
+article header {
+	/*Ensure enough room between header and content (regardless if it's a <p> or not)*/
+	margin-bottom:20px;
+}
+
+article header h2 {
+	/*Shorter space between header and timestamp*/
+	margin-bottom:5px;
+}
+
 #pageContent article:last-of-type {
 	/*Remove separation styling from last article on page.*/
 	border-bottom: none;

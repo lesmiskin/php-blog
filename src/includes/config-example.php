@@ -18,6 +18,8 @@
 	const GA_ENABLED = 				false;
 	const GA_ID = 					'';
 
+	date_default_timezone_set('NZ');
+
 	//Enable error display for debugging purposes (disable in production!)
 	ini_set('display_startup_errors',1);
 	ini_set('display_errors',1);

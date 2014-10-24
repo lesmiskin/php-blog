@@ -56,7 +56,7 @@
 </head>
 <body>
 
-	<header>
+	<header id="pageHeader">
 		<div id="navContainer">
 			<nav>
 				<!-- Social links area -->
@@ -86,8 +86,12 @@
 			<!-- Main blog article iteration -->
 			<?php foreach($results as $row) { ?>
 				<article>
-					<h2><?= $row->Title ?></h2>
-					
+					<header>
+						<h2><?= $row->Title ?></h2>
+						<time datetime='<?= $row->Created ?>'>
+							<?= (new DateTime($row->Created))->format('Y-m-d, h:i a') ?>
+						</time>
+					</header>
 					<?= $row->Content ?>
 				</article>
 			<?php } ?>
