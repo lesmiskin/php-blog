@@ -82,7 +82,7 @@ h2 {
 	font-weight:normal;
 	font-size: 20pt;
 	text-transform: uppercase;
-	margin-bottom:20px;
+	margin-bottom:10px;
 	margin-top:0;
 }
 
@@ -98,13 +98,11 @@ a:hover {
 
 /*Blog articles*/
 article {
-	padding:25px 42px;
-	margin-bottom:40px;
+	padding:25px 42px 42px 42px;
 	border-bottom:2px solid #E3E4B6;
 }
 #pageContent article:last-of-type {
 	/*Remove separation styling from last article on page.*/
-	margin-bottom: 0;		
 	border-bottom: none;
 }
 
