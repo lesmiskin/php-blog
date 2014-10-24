@@ -9,18 +9,20 @@ body {
 	/*background-image:url('/images/sprinkles.png');*/
 	background-size:10px 5px;
 }
-
-#pageContent {
-	box-shadow: 0px 1px 6px -2px gray;
-	background-color:white;
-	border-radius:6px;			/*Need non-chrome equivelants.*/
-	/*box-sizing: border-box;*/			/*So we can add padding without affecting bounding box.*/
-}
 #pageContainer {
 	margin:0 auto;
 	padding: 75px 20px 40px 20px;
 	max-width:960px;
 	min-width:380px;
+}
+#pageContent {
+	box-shadow: 0px 1px 6px -2px gray;
+	background-color:white;
+	border-radius:6px;			/*Need non-chrome equivelants.*/
+
+	/*Ensure the 'About' aside stays within page bounds*/
+	display:table;
+	width:100%;
 }
 /*Header*/
 #pageHeader {
@@ -101,6 +103,7 @@ article {
 	padding:25px 42px 42px 42px;
 	border-bottom:2px solid #E3E4B6;
 	min-width:380px;
+	text-align: :justify;
 }
 
 article header {
@@ -128,10 +131,27 @@ article header h2 {
 
 /* Force dimensions on disagreeable Twitter widget */
 #twitter-widget-0 {
-width:100% !important;
+	width:100% !important;
 }
 
-@media only screen and (max-width: 480px)
+#about {
+	float:right; 
+	width:180px; 
+	padding:20px;
+	background:white; 	/*Ensure we cover any background seam*/
+	font-size:10pt;
+	text-align: justify;
+}
+/*Profile picture*/
+#about img {
+	width: 180px;
+	height:180px;	
+	border-radius:50%;
+	box-shadow: 0px 1px 6px -2px gray;
+}
+
+/*Mobile view*/
+@media only screen and (max-width: 600px)
 {
 body { 
 	margin:0;
@@ -145,14 +165,15 @@ body {
 #navContainer {
 	padding:0 20px;
 }
-
-/*Push down and simplify article spacing.*/
 #pageContent {
 	padding-top:50px;
 	box-shadow:none;
 }
 article {
 	padding:25px 20px 42px 20px;
+}
+#about {
+	display:none;
 }
 }
 
