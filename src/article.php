@@ -20,33 +20,20 @@
 
 	if($article != null) {
 		$pageTitle = $article->Title . ' - ' . BLOG_TITLE;
-
-		//Include 'About' sidebar.
-		include 'about.php';
-?>
-
-	<article>
-		<header>
-			<h2><?= $article->Title ?></h2>
-			<time datetime='<?= $article->Created ?>'>
-				<?= (new DateTime($article->Created))->format('Y-m-d, h:i a') ?>
-			</time>
-		</header>
-		<?= $article->Content ?>
-	</article>
-
-<?php 
-	} else { 
+		
+		//Main page content
+		include '_about.php';
+		include '_article.php';		//leverages $article
+	} 
+	else { 
 		//Serve back a 404.
 		http_response_code(404);
 		$pageTitle = 'Article not found' . ' - ' . BLOG_TITLE;
 ?>
-
 	<section class='message'>
 		<h2>Article not found</h2>
 		<p>Please check the URL, otherwise this article may have been removed.</p>
 	</section>
-
 <?php
 	}
 
