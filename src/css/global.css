@@ -1,12 +1,16 @@
 @import url(//fonts.googleapis.com/css?family=Roboto+Slab|Oswald);
 
+/* Prevent automatic text scaling when viewed on mobiles (e.g. iPhone landscape) */
+html {
+   -webkit-text-size-adjust: 100%;
+}
+
 /*Page structure*/
 body {
 	background-color:rgb(244,244,226);
 	font: 11pt 'Roboto Slab', sans-serif;
 	color:rgb(32,32,32);
 	margin:0;
-	/*background-image:url('/images/sprinkles.png');*/
 	background-size:10px 5px;
 }
 #pageContainer {
@@ -33,9 +37,6 @@ body {
 	background-color:rgb(96,96,96);
 	position:fixed;
 	opacity:0.9;
-/*	border-bottom: 3px solid #FED825;
-	background: url('/images/sprinkles_dark.png');
-	box-shadow: 0px 1px 6px -2px gray;*/
 }
 #navContainer {
 	margin:0 auto;
@@ -180,12 +181,4 @@ article {
 @media 
 only screen and (-webkit-min-device-pixel-ratio: 2), 
 only screen and (min-resolution: 192dpi) { 
-/* Prevent automatic text scaling when viewed on mobiles (e.g. iPhone landscape) */
-html {
-   -webkit-text-size-adjust: 100%;
-}
-/*body {
-	background-image: url('/images/sprinkles_@2x.png');
-	background-size:10px 5px;
-}*/
 }
