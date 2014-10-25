@@ -177,12 +177,15 @@ article {
 }
 }
 
-/*@media 
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2), 
 only screen and (min-resolution: 192dpi) { 
-body {
+/* Prevent automatic text scaling when viewed on mobiles (e.g. iPhone landscape) */
+html {
+   -webkit-text-size-adjust: 100%;
+}
+/*body {
 	background-image: url('/images/sprinkles_@2x.png');
 	background-size:10px 5px;
+}*/
 }
-}
-*/
