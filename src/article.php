@@ -20,16 +20,10 @@
 
 	if($article != null) {
 		$pageTitle = $article->Title . ' - ' . BLOG_TITLE;
-?>
 
-	<!-- 'About' sidebar. -->
-	<aside id="about">
-		<h2>
-			<?= BLOG_ABOUT_TITLE ?>
-		</h2>
-		<img id="profilePicture">
-		<?= BLOG_ABOUT_PROFILE ?>
-	</aside>
+		//Include 'About' sidebar.
+		include 'about.php';
+?>
 
 	<article>
 		<header>

@@ -15,16 +15,10 @@
 	
 	//We can now safely terminate the DB connection.
 	$connection = null;
-?>
 
-<!-- 'About' sidebar. -->
-<aside id="about">
-	<h2>
-		<?= BLOG_ABOUT_TITLE ?>
-	</h2>
-	<img id="profilePicture">
-	<?= BLOG_ABOUT_PROFILE ?>
-</aside>
+	//Include 'About' sidebar.
+	include 'about.php';
+?>
 
 <!-- Main blog article iteration -->
 <?php foreach($results as $row) { ?>
@@ -50,5 +44,5 @@
   $pageContent = ob_get_contents();
   ob_end_clean();
   $pageTitle = BLOG_TITLE;
-  include("_master.php");
+  include '_master.php';
 ?>
