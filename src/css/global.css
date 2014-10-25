@@ -99,6 +99,10 @@ a:hover {
 	color:gray;
 }
 
+.message {
+	padding:25px 42px 42px 42px;
+}
+
 /*Blog articles*/
 article {
 	padding:25px 42px 42px 42px;
@@ -169,6 +173,9 @@ body {
 #pageContent {
 	padding-top:50px;
 	box-shadow:none;
+}
+.message {
+	padding:25px 20px 42px 20px;
 }
 article {
 	padding:25px 20px 42px 20px;
