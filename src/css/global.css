@@ -2,7 +2,7 @@
 
 /* Prevent automatic text scaling when viewed on mobiles (e.g. iPhone landscape) */
 html {
-   -webkit-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 /*Page structure*/
