@@ -1,5 +1,8 @@
 div.callout {
 	float: left;
+	white-space:nowrap;		/*Important for correctly calculating width of callout*/
+	display:none;			/*Hide until directed to show via JS*/
+	z-index:1;				/*Ensure we're always on top (e.g. when in header bar)*/
 }
 
 div.callout {
@@ -21,7 +24,7 @@ div.callout {
 }
 
 .callout.top::before {
-	left: 80%;
+	left: 45%;
 	top: -10px;
 	border-bottom: 6px solid #444;
 }

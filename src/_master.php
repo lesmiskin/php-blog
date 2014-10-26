@@ -39,21 +39,22 @@
 </head>
 <body>
 
+	<div class="callout top">
+	</div>
+
 	<header id="pageHeader">
 		<div id="navContainer">
 			<nav>
 				<!-- Social links area -->
-				<div id="socialLinks">
+				<div id="socialLinks" class="icons">
 					<?php if(GITHUB_ENABLED) { ?>
-						<a href="https://github.com/<?= GITHUB_REPO ?>" data-callout="Source code" target="_blank">
+						<a href="https://github.com/<?= GITHUB_REPO ?>" class="hasCallout" data-callout="Source code" target="_blank">
 							<span class="fa fa-github"></span>
 						</a>
 					<?php } ?>
-					<a href="//twitter.com/<?= TWITTER_HANDLE ?>" data-callout="@<?= TWITTER_HANDLE ?>" target="_blank">
+					<a href="//twitter.com/<?= TWITTER_HANDLE ?>" class="hasCallout" data-callout="@<?= TWITTER_HANDLE ?>" target="_blank">
 						<span class="fa fa-twitter"></span>
 					</a>
-					<div class="callout top" style="display:none">
-					</div>
 				</div>
 
 				<!-- Logo and blog title -->

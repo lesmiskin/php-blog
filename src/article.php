@@ -2,6 +2,7 @@
 	ob_start();
 	include 'includes/config.php';
 	include 'includes/functions.php';
+
 	$article = null;
 	$querystringKey = 'title';
 
@@ -9,7 +10,7 @@
 		//Connect to database and grab article.
 		$connection = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
 		$statement = $connection->prepare(
-			"select Title, Content, Created from article where ShortName = :shortName"
+			"select Title, ShortName, Content, Created from article where ShortName = :shortName"
 		);
 		$statement->execute(array(
 			':shortName' => $_GET[$querystringKey]

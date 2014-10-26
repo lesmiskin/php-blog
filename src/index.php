@@ -1,13 +1,13 @@
 <?php
 	ob_start();
 
-	//Load in configuration variables from external file.
 	include 'includes/config.php';
+	include 'includes/functions.php';
 
 	//Connect to database and grab articles.
 	$connection = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
 	$selectQuery = 
-		"select Title, Content, Created from article order by created desc";
+		"select Title, ShortName, Content, Created from article order by created desc";
 	$results = $connection->query($selectQuery)->fetchAll(PDO::FETCH_OBJ);
 	$connection = null;
 

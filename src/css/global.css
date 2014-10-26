@@ -48,20 +48,21 @@ body {
 	float:right;			/*Should be on the right-hand side of the page.*/
 	padding-top:5px;
 }
+#socialLinks span {
+	font-size: 1.5em;
+}
 #socialLinks a {
-	border:none;
 	color:rgb(205,205,205);
-	margin-right:10px;
 }
 #socialLinks a:hover {
 	color:rgb(225,225,225);
 }
 
-#socialLinks span {
-	font-size: 1.5em;
-/*	text-shadow: 1px 1px 1px #606060; */
+.icons a {
+	border:none;
+	margin-right:10px;
 }
-#socialLinks a:last-of-type {
+.icons a:last-of-type {
 	/*Remove margin from last icon.*/
 	margin:0;
 }
@@ -110,17 +111,25 @@ article {
 	min-width:380px;
 	text-align: justify;
 }
-
 article header {
 	/*Ensure enough room between header and content (regardless if it's a <p> or not)*/
 	margin-bottom:20px;
 }
-
 article header h2 {
 	/*Shorter space between header and timestamp*/
 	margin-bottom:5px;
 }
+article footer.articleSharing span {
+	margin-top:20px;
+	font-size:1.25em;
+}
 
+article footer.articleSharing a {
+	color:gray;
+}
+article footer.articleSharing a:hover {
+	color:rgb(160,160,160);
+}
 #pageContent article:last-of-type {
 	/*Remove separation styling from last article on page.*/
 	border-bottom: none;

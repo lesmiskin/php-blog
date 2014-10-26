@@ -1,15 +1,23 @@
-function loadSocialLinkCallouts() {
-	var callout = $('#socialLinks .callout');
+"use strict";
+
+function loadCallouts() {
+	var callout = $('.callout');
 
 	// Icon callouts
-	$('#socialLinks a').hover(
+	$('.hasCallout').hover(
 		function() { 
 			//Write contents of caption from data attribute on icon
 			var dataCaption = $(this).data('callout');
 			callout.text(dataCaption);
-			var offset = $(this).offset().left - (callout.width()) + 8;
-			callout.css('left', offset);
-			callout.show(); 
+
+			//Figure out where to put it onscreen.
+			var newTop = $(this).offset().top + callout.height();
+			var newLeft = $(this).offset().left - (callout.width() / 2);
+
+			//Position it accordingly, and show it.
+			callout.css('top', newTop);
+			callout.css('left', newLeft);
+			callout.show();
 		},
 		function() { 
 			callout.hide(); 
@@ -18,5 +26,5 @@ function loadSocialLinkCallouts() {
 }
 
 $(function() {
-	loadSocialLinkCallouts();
+	loadCallouts();
 });
