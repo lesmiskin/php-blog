@@ -12,6 +12,7 @@
 
 	<link href="/themes/<?= BLOG_THEME ?>/favicon.ico" rel="icon">
 	<link href="/css/global.css" rel="stylesheet">
+	<link href="/themes/<?= BLOG_THEME ?>/theme.css" rel="stylesheet">
 	<link href="/css/callout.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -58,7 +59,9 @@
 				</div>
 
 				<!-- Logo and blog title -->
-				<img src='/themes/<?= BLOG_THEME ?>/images/logo.svg' id='logo'>
+				<a href='/'>
+					<img src='/themes/<?= BLOG_THEME ?>/images/logo.svg' id='logo'>
+				</a>
 				<h1><?= BLOG_TITLE ?></h1>
 			</nav>
 		</div>

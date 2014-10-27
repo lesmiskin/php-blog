@@ -10,15 +10,23 @@
 		"select Title, ShortName, Content, Created from article order by created desc";
 	$results = $connection->query($selectQuery)->fetchAll(PDO::FETCH_OBJ);
 	$connection = null;
+?>
 
-	//Include 'About' sidebar.
-	include '_about.php';
-
-	// Main blog article iteration
+<!-- Main blog content -->
+<div id="bodyColumn">
+<?php
 	foreach($results as $article) {
 		include '_article.php';		//leverages $article
 	}
+?>
+</div>
 
+<!-- Sidebar -->
+<div id="sideColumn">
+	<?php include '_about.php'; ?>
+</div>
+
+<?php
 	//Twitter widget (if enabled).
 	if(TWITTER_WIDGET_ENABLED) { ?>
 		<article>

@@ -1,5 +1,3 @@
-@import url(//fonts.googleapis.com/css?family=Roboto+Slab|Oswald);
-
 /* Prevent automatic text scaling when viewed on mobiles (e.g. iPhone landscape) */
 html {
 	-webkit-text-size-adjust: 100%;
@@ -7,11 +5,9 @@ html {
 
 /*Page structure*/
 body {
-	background-color:rgb(244,244,226);
-	font: 11pt 'Roboto Slab', sans-serif;
-	color:rgb(32,32,32);
 	margin:0;
 	background-size:10px 5px;
+	font-size: 11pt;
 }
 #pageContainer {
 	margin:0 auto;
@@ -21,20 +17,16 @@ body {
 }
 #pageContent {
 	box-shadow: 0px 1px 6px -2px gray;
-	background-color:white;
 	border-radius:6px;			/*Need non-chrome equivelants.*/
-
-	/*Ensure the 'About' aside stays within page bounds*/
 	display:table;
-	width:100%;
 }
+
 /*Header*/
 #pageHeader {
 	vertical-alignment:middle;
 	display:table;
 	width:100%;
 	padding:8px 0;
-	background-color:rgb(96,96,96);
 	position:fixed;
 	opacity:0.9;
 }
@@ -44,71 +36,24 @@ body {
 	max-width:960px;
 	min-width:380px;
 }
-#socialLinks{
-	float:right;			/*Should be on the right-hand side of the page.*/
-	padding-top:5px;
-}
-#socialLinks span {
-	font-size: 1.5em;
-}
-#socialLinks a {
-	color:rgb(205,205,205);
-}
-#socialLinks a:hover {
-	color:rgb(225,225,225);
-}
 
-.icons a {
-	border:none;
-	margin-right:10px;
+/*Main content columns*/
+/*NB: We apply content padding at the article level to permit full-length separators*/
+/*NB: Columns use tabular display approach for easy natural layout*/
+#bodyColumn {
+	display:table-cell;
 }
-.icons a:last-of-type {
-	/*Remove margin from last icon.*/
-	margin:0;
-}
-
-/*Headings*/
-h1, h2 {
-	color:rgb(48,48,48);
-}
-h1 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 13pt;
-	font-weight:normal;
-	text-transform: uppercase;
-	margin:0;
-	padding-top:3px;
-	color:white;
-/*	text-shadow: 1px 1px 1px #606060; */
-}
-h2 {
-	font-family: 'Oswald', sans-serif;
-	font-weight:normal;
-	font-size: 20pt;
-	text-transform: uppercase;
-	margin-bottom:10px;
-	margin-top:0;
-}
-
-/*Links*/
-a {
-	color:black;
-	text-decoration: none;
-	border-bottom:1px solid;
-}
-a:hover {
-	color:gray;
-}
-
-.message {
-	padding:25px 42px 42px 42px;
+#sideColumn {
+	box-sizing: border-box;		/*Ensure width isn't affected by padding*/
+	width:224px;
+	padding: 25px 22px 42px 22px;
+	display:table-cell;
 }
 
 /*Blog articles*/
 article {
 	padding:25px 42px 42px 42px;
-	border-bottom:2px solid #E3E4B6;
-	min-width:380px;
+	border-bottom:2px solid;
 	text-align: justify;
 }
 article header {
@@ -123,16 +68,68 @@ article footer.articleSharing span {
 	margin-top:20px;
 	font-size:1.25em;
 }
-
-article footer.articleSharing a {
-	color:gray;
-}
-article footer.articleSharing a:hover {
-	color:rgb(160,160,160);
-}
 #pageContent article:last-of-type {
 	/*Remove separation styling from last article on page.*/
 	border-bottom: none;
+}
+
+/*About box*/
+#about {
+	font-size:10pt;
+	text-align: justify;
+}
+#about img {
+	width: 180px;
+	height:180px;	
+	border-radius:50%;
+	box-shadow: 0px 1px 6px -2px gray;
+}
+
+/*Social links*/
+#socialLinks{
+	float:right;			/*Should be on the right-hand side of the page.*/
+	padding-top:5px;
+}
+#socialLinks span {
+	font-size: 1.5em;
+}
+
+/*General icons*/
+.icons a {
+	border:none;
+	margin-right:10px;
+}
+.icons a:last-of-type {
+	/*Remove margin from last icon.*/
+	margin:0;
+}
+
+/*Headings*/
+h1 {
+	font-size: 13pt;
+	font-weight:normal;
+	text-transform: uppercase;
+	margin:0;
+	padding-top:3px;
+	color:white;
+/*	text-shadow: 1px 1px 1px #606060; */
+}
+h2 {
+	font-weight:normal;
+	font-size: 20pt;
+	text-transform: uppercase;
+	margin-bottom:10px;
+	margin-top:0;
+}
+
+/*Links*/
+a {
+	text-decoration: none;
+	border-bottom:1px solid;
+}
+
+.message {
+	padding:25px 42px 42px 42px;
 }
 
 /*Images*/
@@ -146,22 +143,6 @@ article footer.articleSharing a:hover {
 /* Force dimensions on disagreeable Twitter widget */
 #twitter-widget-0 {
 	width:100% !important;
-}
-
-#about {
-	float:right; 
-	width:180px; 
-	padding: 25px 42px 42px 42px;
-	background:white; 	/*Ensure we cover any background seam*/
-	font-size:10pt;
-	text-align: justify;
-}
-/*Profile picture*/
-#about img {
-	width: 180px;
-	height:180px;	
-	border-radius:50%;
-	box-shadow: 0px 1px 6px -2px gray;
 }
 
 /*Mobile view*/
@@ -182,6 +163,9 @@ body {
 #pageContent {
 	padding-top:50px;
 	box-shadow:none;
+}
+#sideColumn {
+	display:none;
 }
 .message {
 	padding:25px 20px 42px 20px;

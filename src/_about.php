@@ -16,10 +16,10 @@
 </style>
 
 <!-- 'About' sidebar. -->
-<aside id="about">
+<section id="about">
 	<h2>
 		<?= BLOG_ABOUT_TITLE ?>
 	</h2>
 	<img id="profilePicture">
 	<?= BLOG_ABOUT_PROFILE ?>
-</aside>
+</section>
