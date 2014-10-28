@@ -20,6 +20,6 @@
 	<h2>
 		<?= BLOG_ABOUT_TITLE ?>
 	</h2>
-	<img id="profilePicture">
+	<div id="profilePicture"></div>
 	<?= BLOG_ABOUT_PROFILE ?>
 </section>

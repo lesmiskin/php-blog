@@ -6,13 +6,13 @@ html {
 /*Page structure*/
 body {
 	margin:0;
-	background-size:10px 5px;
-	font-size: 11pt;
+	font-size: 12pt;
+	line-height: 18pt;
 }
 #pageContainer {
 	margin:0 auto;
-	padding: 75px 20px 40px 20px;
-	max-width:960px;
+	padding: 70px 20px 40px 20px;
+	max-width:900px;
 	min-width:380px;
 }
 #pageContent {
@@ -34,7 +34,7 @@ body {
 #navContainer {
 	margin:0 auto;
 	padding: 0 20px;
-	max-width:960px;
+	max-width:900px;
 	min-width:380px;
 }
 
@@ -53,7 +53,7 @@ body {
 
 /*Blog articles*/
 article {
-	padding:25px 42px 42px 42px;
+	padding:25px 62px 42px 62px;
 	border-bottom:2px solid;
 	text-align: justify;
 }
@@ -78,8 +78,9 @@ article footer.articleSharing span {
 #about {
 	font-size:10pt;
 	text-align: justify;
+	line-height:14pt;
 }
-#about img {
+#profilePicture {
 	width: 180px;
 	height:180px;	
 	border-radius:50%;
@@ -118,6 +119,7 @@ h1 {
 h2 {
 	font-weight:normal;
 	font-size: 20pt;
+	line-height:29pt;
 	text-transform: uppercase;
 	margin-bottom:10px;
 	margin-top:0;
@@ -138,12 +140,24 @@ a {
 	width:32px;
 	height:32px;
 	float:left;
-	margin-right:12px;
+	margin-right:9px;
 }
 
 /* Force dimensions on disagreeable Twitter widget */
 #twitter-widget-0 {
 	width:100% !important;
+}
+
+/*Small desktop*/
+@media only screen and (max-width: 800px)
+{
+article {
+	padding:25px 32px 42px 32px;
+}
+#sideColumn {
+	padding:25px 12px 42px 12px;
+	width:204px;
+}
 }
 
 /*Mobile view*/
@@ -172,9 +186,16 @@ body {
 	padding:25px 20px 42px 20px;
 }
 article {
-	padding:25px 20px 42px 20px;
+	padding:25px 32px 42px 32px;
 }
 #about {
 	display:none;
+}
+/*Shift header elements in to be inline with text bounds.*/
+#logo{
+	margin-left:10px;
+}
+#socialLinks {
+	margin-right:10px;
 }
 }
