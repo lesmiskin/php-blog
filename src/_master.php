@@ -48,14 +48,17 @@
 			<nav>
 				<!-- Social links area -->
 				<div id="socialLinks" class="icons">
+					<a href="mailto:<?= BLOG_EMAIL ?>" class="hasCallout" data-callout="Email" target="_blank">
+						<span class="fa fa-at"></span>
+					</a>
+					<a href="//twitter.com/<?= TWITTER_HANDLE ?>" class="hasCallout" data-callout="@<?= TWITTER_HANDLE ?>" target="_blank">
+						<span class="fa fa-twitter"></span>
+					</a>
 					<?php if(GITHUB_ENABLED) { ?>
 						<a href="https://github.com/<?= GITHUB_REPO ?>" class="hasCallout" data-callout="Source code" target="_blank">
 							<span class="fa fa-github"></span>
 						</a>
 					<?php } ?>
-					<a href="//twitter.com/<?= TWITTER_HANDLE ?>" class="hasCallout" data-callout="@<?= TWITTER_HANDLE ?>" target="_blank">
-						<span class="fa fa-twitter"></span>
-					</a>
 				</div>
 
 				<!-- Logo and blog title -->

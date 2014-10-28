@@ -6,6 +6,7 @@
 	const BLOG_ABOUT_TITLE = 		'About';
 	const BLOG_ABOUT_PROFILE = 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 	const BLOG_URL = 				'https://example.com';
+	const BLOG_EMAIL = 				'user@nospam.example.com';
 
 	const DB_DSN = 					'mysql:host=127.0.0.1;dbname=blog';
 	const DB_USERNAME = 			'username';
