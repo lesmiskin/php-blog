@@ -19,6 +19,7 @@ body {
 	box-shadow: 0px 1px 6px -2px gray;
 	border-radius:6px;			/*Need non-chrome equivelants.*/
 	display:table;
+	width:100%;
 }
 
 /*Header*/

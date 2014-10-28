@@ -21,20 +21,31 @@
 
 	if($article != null) {
 		$pageTitle = $article->Title . ' - ' . BLOG_TITLE;
-		
-		//Main page content
-		include '_about.php';
-		include '_article.php';		//leverages $article
+?>
+
+<!-- Main blog content -->
+<div id="bodyColumn">
+	<?php include '_article.php' ?>
+</div>
+
+<!-- Sidebar -->
+<div id="sideColumn">
+	<?php include '_about.php'; ?>
+</div>
+
+<?php
 	} 
 	else { 
 		//Serve back a 404.
 		http_response_code(404);
 		$pageTitle = 'Article not found' . ' - ' . BLOG_TITLE;
 ?>
+<div id="bodyColumn">
 	<section class='message'>
 		<h2>Article not found</h2>
 		<p>Please check the URL, otherwise this article may have been removed.</p>
 	</section>
+</div>
 <?php
 	}
 
