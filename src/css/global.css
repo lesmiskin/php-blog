@@ -75,9 +75,9 @@ article footer.articleSharing span {
 }
 article .photo {
 	width:97%; 			/*Responsive size, -3% offset for borders*/
-	border: 8px solid white;
-	border-radius:11px;
-	box-shadow: 0 0 7px 0 rgb(153,153,153);
+	border: 7px solid white;
+	border-radius:6px;
+	box-shadow: 0 0 6px 0 rgb(153,153,153);
 }
 
 /*About box*/
