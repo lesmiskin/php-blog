@@ -73,6 +73,12 @@ article footer.articleSharing span {
 	/*Remove separation styling from last article on page.*/
 	border-bottom: none;
 }
+article .photo {
+	width:97%; 			/*Responsive size, -3% offset for borders*/
+	border: 8px solid white;
+	border-radius:11px;
+	box-shadow: 0 0 7px 0 rgb(153,153,153);
+}
 
 /*About box*/
 #about {
