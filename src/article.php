@@ -3,21 +3,12 @@
 	include 'includes/config.php';
 	include 'includes/functions.php';
 
-	$article = null;
-	$querystringKey = 'title';
-
-	if(isStringQueryString($querystringKey)) {
-		//Connect to database and grab article.
-		$connection = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
-		$statement = $connection->prepare(
-			"select Title, ShortName, Content, Created from article where ShortName = :shortName"
-		);
-		$statement->execute(array(
-			':shortName' => $_GET[$querystringKey]
-		));
-		$article = $statement->fetch(PDO::FETCH_OBJ);
-		$connection = null;
-	}
+	$article = dbAtomicSelectSingle(
+		"select Title, ShortName, Content, Created from article where ShortName = :shortName",
+		array(
+			':shortName' => getQueryString('title')
+		)
+	);
 
 	if($article != null) {
 		$pageTitle = $article->Title . ' - ' . BLOG_TITLE;

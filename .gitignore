@@ -1,2 +1,6 @@
 src/includes/config.php
 src/themes/lmiskin/
+src/photos/
+src/admin/.htpasswd
+src/admin/.htaccess
+*.sublime*

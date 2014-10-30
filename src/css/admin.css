@@ -1,0 +1,44 @@
+@import url(//fonts.googleapis.com/css?family=Roboto);
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin:20px;
+}
+
+/*Index*/
+table{
+	border-collapse: collapse;
+	float:left;
+	margin-top:20px;
+	width:100%;
+}
+td {
+	padding-bottom:10px;
+}
+.title {
+	width:80%;
+	padding-right:30px;
+}
+.created {
+	width:20%;
+	white-space: nowrap;
+	text-align:right;
+	color:gray;
+}
+
+/*CRUD pages*/
+input, textarea {
+	float:left;
+	padding:6px;
+	border:1px solid lightgrey;
+	box-sizing:border-box;
+}
+input[type=text], textarea {
+	clear:left;		/*Ensure form elements take up a whole line.*/
+	width:100%;
+	margin-bottom:15px;
+}
+input[type=submit] {
+	width:120px;
+	margin-top:10px;
+}
