@@ -4,3 +4,4 @@ src/photos/
 src/admin/.htpasswd
 src/admin/.htaccess
 *.sublime*
+*.DS_Store
