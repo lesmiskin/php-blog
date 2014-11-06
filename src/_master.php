@@ -54,6 +54,12 @@
 					<a href="//twitter.com/<?= TWITTER_HANDLE ?>" class="hasCallout" data-callout="@<?= TWITTER_HANDLE ?>" target="_blank">
 						<span class="fa fa-twitter"></span>
 					</a>
+					<a href="//instagram.com/<?= INSTAGRAM_HANDLE ?>" class="hasCallout" data-callout="Instagram" target="_blank">
+						<span class="fa fa-instagram"></span>
+					</a>
+					<a href="//linkedin.com/pub/<?= LINKEDIN_HANDLE ?>" class="hasCallout" data-callout="LinkedIn" target="_blank">
+						<span class="fa fa-linkedin"></span>
+					</a>
 					<?php if(GITHUB_ENABLED) { ?>
 						<a href="https://github.com/<?= GITHUB_REPO ?>" class="hasCallout" data-callout="Source code" target="_blank">
 							<span class="fa fa-github"></span>

@@ -19,6 +19,8 @@
 	const TWITTER_MAX_SHORTENED_URL = 	23;
 	const TWITTER_SHARE_PREFIX = 		'https://twitter.com/home?status=';
 
+	const LINKEDIN_HANDLE = 			'';
+	const INSTAGRAM_HANDLE = 			'';
 	const FACEBOOK_SHARE_PREFIX = 		'https://www.facebook.com/sharer/sharer.php?u=';
 
 	const GITHUB_ENABLED = 			false;
