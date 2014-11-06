@@ -21,6 +21,7 @@
 <!-- Sidebar -->
 <div id="sideColumn">
 	<?php include '_about.php'; ?>
+	<?php include '_archive.php'; ?>
 </div>
 
 <?php

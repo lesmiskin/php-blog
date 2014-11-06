@@ -47,8 +47,35 @@ body {
 #sideColumn {
 	box-sizing: border-box;		/*Ensure width isn't affected by padding*/
 	width:224px;
-	padding: 25px 22px 42px 22px;
 	display:table-cell;
+}
+
+/*About box*/
+#about {
+	padding: 25px 22px 25px 22px;
+	font-size:10pt;
+	text-align: justify;
+	line-height:14pt;
+}
+#profilePicture {
+	width: 180px;
+	height:180px;	
+	border-radius:50%;
+	box-shadow: 0px 1px 6px -2px gray;
+}
+
+/*Archive area*/
+#archive{
+	padding: 25px 22px 22px 22px;
+	border-top:2px solid #C2C394;
+}
+#archive ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+#archive li {
+	padding-bottom:8px;
 }
 
 /*Blog articles*/
@@ -78,19 +105,6 @@ article .photo {
 	border: 7px solid white;
 	border-radius:6px;
 	box-shadow: 0 0 6px 0 rgb(153,153,153);
-}
-
-/*About box*/
-#about {
-	font-size:10pt;
-	text-align: justify;
-	line-height:14pt;
-}
-#profilePicture {
-	width: 180px;
-	height:180px;	
-	border-radius:50%;
-	box-shadow: 0px 1px 6px -2px gray;
 }
 
 /*Social links*/
