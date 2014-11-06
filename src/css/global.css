@@ -50,6 +50,20 @@ body {
 	display:table-cell;
 }
 
+input[type=button] {
+	padding:6px;
+	border: 1px solid #C2C394;
+	box-shadow:0 3px 0 0 #C2C394;
+	background-color:white;
+	border-radius:4px;
+	background-color:rgb(244,244,226);
+}
+
+input[type=button]:active {
+	margin-top:3px;
+	box-shadow:none;
+}
+
 /*About box*/
 #about {
 	padding: 25px 22px 25px 22px;
@@ -179,8 +193,10 @@ article {
 	padding:25px 32px 42px 32px;
 }
 #sideColumn {
-	padding:25px 12px 42px 12px;
 	width:204px;
+}
+#about, #archive {
+	padding:25px 12px 25px 12px;
 }
 }
 
