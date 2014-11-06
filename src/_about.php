@@ -21,5 +21,7 @@
 		<?= BLOG_ABOUT_TITLE ?>
 	</h2>
 	<div id="profilePicture"></div>
-	<?= BLOG_ABOUT_PROFILE ?>
+	<div id="profile">
+		<?= BLOG_ABOUT_PROFILE ?>
+	</div>
 </section>

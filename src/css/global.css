@@ -233,18 +233,44 @@ body {
 	padding-top:50px;
 	box-shadow:none;
 }
-#sideColumn {
-	display:none;
+
+/*Move sidebar to bottom of document*/
+#bodyColumn {
+	float:left;
 }
+#sideColumn {
+	float:left;
+	width:100%;
+}
+#about, #archive{
+	padding: 25px 32px 25px 32px;
+}
+#profilePicture {
+	/*Squeeze the profile picture down, and left-align it*/
+	width:120px;
+	height:120px;
+	float:left;
+	background-size: 120px 120px;
+	margin-right:20px;
+}
+#profile {
+	/*Ensure we don't wrap around the profile picture.*/
+	display:table-cell;
+}
+#profile p:first-of-type {
+	/*So we line text up with top of profile picture*/
+	margin-top:0;
+}
+
 .message {
 	padding:25px 20px 42px 20px;
 }
 article {
 	padding:25px 32px 42px 32px;
 }
-#about {
+/*#about {
 	display:none;
-}
+}*/
 /*Shift header elements in to be inline with text bounds.*/
 #logo{
 	margin-left:10px;
