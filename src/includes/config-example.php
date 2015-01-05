@@ -2,7 +2,7 @@
 	//Blog constants, modify as necessary.
 	const BLOG_TITLE = 				'Example Blog';
 	const BLOG_THEME = 				'example';
-	const BLOG_DESCRIPTION = 		'All your blogs are belong to us.'
+	const BLOG_DESCRIPTION = 		'All your blogs are belong to us.';
 	const BLOG_ABOUT_TITLE = 		'About';
 	const BLOG_ABOUT_PROFILE = 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 	const BLOG_URL = 				'https://example.com';
