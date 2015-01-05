@@ -1,3 +1,6 @@
+CREATE DATABASE blog /*!40100 DEFAULT CHARACTER SET latin1 */;
+use blog;
+
 CREATE TABLE `article` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `Title` varchar(255) NOT NULL,
