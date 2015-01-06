@@ -6,8 +6,8 @@ html {
 /*Page structure*/
 body {
 	margin:0;
-	font-size: 12pt;
-	line-height: 18pt;
+	font-size: 11pt;
+	line-height: 15pt;
 }
 #pageContainer {
 	margin:0 auto;
@@ -81,8 +81,7 @@ input[type=button]:active {
 /*About box*/
 #about {
 	padding: 25px 22px 25px 22px;
-	font-size:10pt;
-	text-align: justify;
+	font-size:9pt;
 	line-height:14pt;
 }
 #profilePicture {
@@ -110,7 +109,9 @@ input[type=button]:active {
 article {
 	padding:25px 62px 42px 62px;
 	border-bottom:2px solid;
-	text-align: justify;
+}
+article li {
+	margin-bottom:10px;
 }
 article header {
 	/*Ensure enough room between header and content (regardless if it's a <p> or not)*/
