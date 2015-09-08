@@ -5,3 +5,4 @@ src/files/
 src/admin/.htpasswd
 src/admin/.htaccess
 .gitmodules
+.htpasswd
