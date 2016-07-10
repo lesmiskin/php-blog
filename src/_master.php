@@ -57,12 +57,12 @@
 					<a href="//instagram.com/<?= INSTAGRAM_HANDLE ?>" class="hasCallout" data-callout="Instagram" target="_blank">
 						<span class="fa fa-instagram"></span>
 					</a>
-					<a href="//linkedin.com/pub/<?= LINKEDIN_HANDLE ?>" class="hasCallout" data-callout="LinkedIn" target="_blank">
+					<a href="//linkedin.com/in/<?= LINKEDIN_HANDLE ?>" class="hasCallout" data-callout="LinkedIn" target="_blank">
 						<span class="fa fa-linkedin"></span>
 					</a>
 					<?php if(GITHUB_ENABLED) { ?>
-						<a href="https://github.com/<?= GITHUB_REPO ?>" class="hasCallout" data-callout="Source code" target="_blank">
-							<span class="fa fa-github"></span>
+						<a href="https://gitlab.com/<?= GITHUB_REPO ?>" class="hasCallout" data-callout="Projects" target="_blank">
+							<span class="fa fa-git"></span>
 						</a>
 					<?php } ?>
 				</div>
